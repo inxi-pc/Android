@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+    <ListView
+	    android:id="@+id/list_bbs"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#fff1f1f1"
+	    android:cacheColorHint="#fff1f1f1"
+	    android:divider="@drawable/list_divider"
+	    android:fadingEdge="vertical"
+	    android:fadingEdgeLength="3.0dip"
+	    android:listSelector="@drawable/list_selector"
+	    android:visibility="visible">
+	</ListView>
+</RelativeLayout>

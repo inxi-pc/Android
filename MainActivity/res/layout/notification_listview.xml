@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<ListView
+	    android:id="@+id/list_message"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#fff1f1f1"
+	    android:cacheColorHint="#fff1f1f1"
+	    android:divider="@drawable/list_divider"
+	    android:fadingEdge="vertical"
+	    android:fadingEdgeLength="3.0dip"
+	    android:listSelector="@drawable/list_selector"
+	    android:visibility="visible">
+	</ListView>
+
+	<LinearLayout
+	    android:id="@+id/no_message_tip"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:orientation="vertical"
+	    android:visibility="gone" >
+           
+		<ImageView
+		    android:id="@+id/no_message_img"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/center_nonews"/>
+		            
+       	<TextView
+  			android:id="@+id/no_message_text"
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:layout_gravity="center"
+  			android:layout_below="@id/no_message_img"
+  			android:text="没有新消息~"/>
+	</LinearLayout>
+</RelativeLayout>    
+	

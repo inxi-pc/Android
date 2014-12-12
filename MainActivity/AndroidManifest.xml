@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		package="com.inxi"
+		android:versionCode="1"
+		android:versionName="1.0" >
+
+	<uses-sdk
+			android:minSdkVersion="11"
+			android:targetSdkVersion="19" />
+
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> 
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  
+	<application
+			android:icon="@drawable/ic_launcher"
+			android:label="@string/app_name" >
+			
+		<receiver android:name="com.inxi.Mention.AutoStartMentionService"> 
+				<intent-filter>  	
+						<action android:name="android.intent.action.BOOT_COMPLETED" /> 
+				</intent-filter> 
+		</receiver> 
+
+		<activity
+				android:name="com.inxi.AppEnter.AutoLoginActivity"
+				android:label="@string/app_name"
+				android:theme="@android:style/Theme.NoTitleBar" >
+					<intent-filter>
+							<action android:name="android.intent.action.MAIN" />
+							<category android:name="android.intent.category.LAUNCHER" />
+					</intent-filter>
+		</activity>
+        
+		<activity 
+		    	android:name="com.inxi.AppEnter.LoginActivity"
+		    	android:theme="@android:style/Theme.NoTitleBar"/>
+		<activity
+				android:name="com.inxi.Interface.BBSActivity"
+				android:theme="@android:style/Theme.NoTitleBar" />
+		<activity
+				android:name="com.inxi.Interface.MainActivity"
+				android:theme="@android:style/Theme.NoTitleBar" />
+		<activity 
+				android:name="com.inxi.Interface.MentionActivity" 
+				android:theme="@android:style/Theme.NoTitleBar"/>
+		<activity 
+				android:name="com.inxi.Mention.NotiContentActivity"
+				android:theme="@android:style/Theme.NoTitleBar" />
+		<activity
+				android:name="com.inxi.Mention.NewNotiActivity"
+				android:theme="@android:style/Theme.NoTitleBar" />
+		<activity
+				android:name="com.inxi.Mention.WholeNotiActivity"
+				android:theme="@android:style/Theme.NoTitleBar" />
+		<activity
+				android:name="com.inxi.Interface.PersonActivity"
+				android:theme="@android:style/Theme.NoTitleBar" />
+		<activity
+				android:name="com.inxi.Interface.MoreActivity"
+				android:theme="@android:style/Theme.NoTitleBar" />
+		<activity 
+				android:name="com.inxi.PersonCenter.FastIdeaAnalysis"
+				android:theme="@android:style/Theme.NoTitleBar" />
+        <activity 
+	            android:name="com.inxi.BBS.ToolBarActivity"
+	            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity 
+            android:name="com.inxi.BBS.NoteContentActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        
+        <activity 
+           android:name="com.inxi.BBS.NoteDiscussActivity"
+           android:theme="@android:style/Theme.NoTitleBar" />
+        
+        <service android:enabled="true" android:name="com.inxi.Utility.PushData.PollingService"/> 
+    
+    </application>
+   
+</manifest>
+

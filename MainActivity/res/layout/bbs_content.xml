@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/bbs_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bg" >
+
+        <Button
+            android:id="@+id/bbs_back_bt"
+            style="@style/comm_controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/title_back"
+            android:text="@string/back"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@+id/bbs_titel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/bbs_home_bt"
+            style="@style/comm_controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/title_home"
+            android:textColor="#ffffffff" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="-14.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+			<RelativeLayout
+			    android:id="@+id/bbs_info_layout"
+			    android:layout_width="fill_parent"
+			    android:layout_height="80.0dip" >
+
+			    <ImageView
+			        android:id="@+id/note_content_photo"
+			        android:layout_width="50.0dip"
+			        android:layout_height="50.0dip"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerVertical="true"
+			        android:layout_marginLeft="10.0dip"
+			        android:background="@drawable/person_photo_bg"
+			        android:clickable="true"
+			        android:padding="5.0dip"
+			        android:src="@drawable/person_photo" />
+			    
+			    <TextView
+			        android:id="@+id/textView2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignTop="@+id/note_content_photo"
+			        android:layout_marginLeft="30dp"
+			        android:layout_toRightOf="@+id/note_content_photo"
+			        android:text="发布时间" />
+			    
+			    <TextView
+			        android:id="@+id/note_content_time"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignBottom="@+id/note_content_photo"
+			        android:layout_alignLeft="@+id/note_content_title"
+			        android:singleLine="true"
+			        android:text="123"
+			        android:textColor="#ff484848"
+			        android:textSize="13.0dip" />
+			    			    
+			    <TextView
+			        android:id="@+id/textView1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignBottom="@+id/note_content_time"
+			        android:layout_alignLeft="@+id/textView2"
+			        android:text="标题" />
+			    
+			    <TextView
+			        android:id="@+id/note_content_title"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignTop="@+id/textView2"
+			        android:layout_marginLeft="16dp"
+			        android:layout_toRightOf="@+id/textView2"
+			        android:singleLine="true"
+			        android:text="123"
+			        android:textColor="@color/black"
+			        android:textSize="15.0sp" />
+			</RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/list_divider" />
+
+            <ScrollView
+                android:id="@+id/note_scroll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundcolor" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+   	               
+                    <TextView
+                        android:id="@+id/note_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dip" 
+                        android:text="" />
+                </LinearLayout>
+            </ScrollView>           
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

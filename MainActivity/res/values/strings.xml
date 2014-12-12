@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OH通知器</string>
+ 	<string name="bar">论坛</string>
+ 	<string name="remind">提醒</string>
+ 	<string name="person_info">个人中心</string>
+ 	<string name="more">更多</string>
+ 	<string name="mention_newnotice">最新通知</string>
+ 	<string name="mention_allnotice">历史通知</string>
+ 	<string name="alerm_title">提醒</string>
+ 	<string name="alert_quit_confirm">您真的要退出吗？</string>
+ 	<string name="alert_yes_button">确定</string>
+ 	<string name="alert_no_button">取消</string>
+ 	<string name="back">返回</string>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/backgroundcolor"
+	android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+	<RelativeLayout
+		android:id="@+id/bbs_layout_title"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/title_bg" >
+
+        <TextView
+            android:id="@+id/bbs_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="论坛"
+            android:textColor="@color/white"
+            android:textSize="25px" />
+
+	</RelativeLayout>
+	
+    <FrameLayout
+        android:id="@+id/bbs_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/bbs_layout_title">
+    </FrameLayout>
+</RelativeLayout>

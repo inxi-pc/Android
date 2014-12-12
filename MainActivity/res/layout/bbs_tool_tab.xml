@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@android:id/tabhost"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+
+		<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="@color/backgroundcolor"
+				android:orientation="vertical" >
+
+		<FrameLayout
+			    android:id="@android:id/tabcontent"
+			    android:layout_width="fill_parent"
+			    android:layout_height="0.0dip"
+			    android:layout_weight="1.0" />
+
+		<TabWidget
+				android:id="@android:id/tabs"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="0.0"
+				android:visibility="gone" />
+
+		<FrameLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="bottom"
+				android:layout_marginTop="-10.0dip"
+				android:background="@drawable/maintab_toolbar_bg"
+				android:paddingLeft="7.0dip"
+				android:paddingRight="7.0dip" >
+
+				<RadioGroup
+						android:id="@+id/tool_main_radio"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center_vertical"
+						android:orientation="horizontal" >
+
+						<RadioButton
+								android:id="@+id/tool_radio_discuss"
+								style="@style/main_tab_bottom"
+								android:drawableTop="@drawable/tabs_home"
+								android:text="评论" />
+						
+						<RadioButton
+							    android:id="@+id/tool_radio_collect"
+							    style="@style/main_tab_bottom"
+							    android:drawableTop="@drawable/tabs_sort"
+							    android:text="收藏" />
+						
+						<RadioButton
+							    android:id="@+id/tool_radio_personinfo"
+							    style="@style/main_tab_bottom"
+							    android:drawableTop="@drawable/tabs_search"
+							    android:text="楼主信息" />
+						
+						<RadioButton
+							    android:id="@+id/tool_radio_more"
+							    style="@style/main_tab_bottom"
+							    android:drawableTop="@drawable/tabs_more"
+							    android:text="更多" />
+            	</RadioGroup>
+
+	            <TextView
+		                android:id="@+id/num_discuss"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="top|left|center"
+		                android:layout_marginLeft="115.0dip"
+		                android:layout_marginTop="-5.0dip"
+		                android:background="@drawable/message_tips"
+		                android:gravity="center"
+		                android:text=""
+		                android:textColor="#ffffffff"
+		                android:textSize="13.0sp"
+		                android:visibility="invisible" />
+
+	            <TextView
+		                android:id="@+id/num_collect"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="top|left|center"
+		                android:layout_marginLeft="190.0dip"
+		                android:layout_marginTop="-5.0dip"
+		                android:background="@drawable/message_tips"
+		                android:gravity="center"
+		                android:text=""
+		                android:textColor="#ffffffff"
+		                android:textSize="13.0sp"
+		                android:visibility="invisible" />
+        </FrameLayout>
+    
+    </LinearLayout>
+</TabHost>
