@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="coner_size">5.0dip</dimen>
+    <dimen name="coner_stroke_size">1px</dimen>
+</resources>

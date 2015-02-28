@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+    
+    <include layout="@layout/title_layout" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        
+        <FrameLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        
+            <LinearLayout 
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            
+		        <ListView 
+		            android:id="@+id/lv_consult_list"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:divider="@null"
+		            android:cacheColorHint="@android:color/transparent"
+		            android:listSelector="@android:color/transparent" />
+	        
+	        </LinearLayout>
+	        
+            <include layout="@layout/loading" />
+        
+        </FrameLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/title_layout_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            
+            <EditText 
+                android:id="@+id/et_consult_input"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/consult_input_bg"
+                android:textSize="15sp"
+                android:hint="请输入问题或关键词"
+                android:textColor="@color/text_color" />
+            
+            <Button 
+                android:id="@+id/btn_consult_send"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/consult_send_btn_selector"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:text="@string/consult_send" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

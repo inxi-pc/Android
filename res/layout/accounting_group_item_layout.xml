@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="3dip" android:paddingBottom="3dip" android:paddingLeft="5dip" android:paddingRight="5dip" >
+    
+    <RelativeLayout
+    android:id="@+id/itemLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip" android:background="@drawable/accountging_list_selector" >
+
+        <TextView
+            android:id="@+id/timeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/weekTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" android:layout_toRightOf="@+id/timeTV" android:layout_alignBottom="@+id/timeTV" android:layout_toLeftOf="@+id/priceTV"/>
+
+    <TextView
+        android:id="@+id/priceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dip"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</RelativeLayout>
+</RelativeLayout>

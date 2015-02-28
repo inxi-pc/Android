@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_margin="10dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/coner_bg2"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dip" >
+
+                <LinearLayout android:id="@+id/xiala_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/monthTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/orange"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/dayTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="2dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/xiala_btn"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/xiala_btn_selector" 
+                        android:layout_marginBottom="5dp"/>
+                    <!--
+                 <TextView android:id="@+id/dayTV" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                    android:textSize="12sp" android:textColor="@color/black" android:text="￥"/>
+                 <TextView android:id="@+id/money" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                    android:textSize="16sp" android:textColor="@color/yellow_color" android:text="0.00"/>
+                    -->
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/save_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/common_orange_btn_selector"
+                    android:text="保存"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/frame_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:id="@+id/typeTV"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="人工"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:id="@+id/xiala_btn2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/xiala_btn_selector" />
+
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="fill_parent"
+                        android:background="@color/gray" />
+
+                    <EditText
+                        android:id="@+id/moneyEdit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:maxLength="8"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="10dip"
+                        android:paddingTop="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" >
+
+                    <EditText
+                        android:id="@+id/remarkEdit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:padding="10dip"
+                        android:hint="请输入备注"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" android:text="当日花销" android:paddingRight="10dp"/>
+                    
+                    <TextView android:id="@+id/todayCash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" android:text="￥0.00" />
+                </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:gravity="center" android:layout_marginTop="5dip"
+            android:orientation="vertical" android:layout_weight="1">
+
+            <ImageView android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/no_history_logo" >
+            </ImageView>
+            
+            <ListView
+		        android:id="@+id/listView"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:cacheColorHint="@android:color/transparent"
+		        android:divider="@null"
+		        android:listSelector="@android:color/transparent" android:visibility="gone"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+     
+
+</LinearLayout>

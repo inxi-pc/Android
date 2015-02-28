@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/drak_gray" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:textSize="17sp"
+        android:textColor="@color/text_color2"
+        android:text="@string/setting_title" />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#1E1E1E" />
+    
+    <LinearLayout 
+        android:id="@+id/ll_setting_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/setting_item_selector">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_icon_clear" />
+        
+        <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="16sp"
+	        android:textColor="@color/text_color2"
+	        android:text="@string/setting_clear_cache" />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_setting_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/setting_item_selector">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_icon_feedback" />
+        
+        <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="16sp"
+	        android:textColor="@color/text_color2"
+	        android:text="@string/setting_feedback" />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_setting_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/setting_item_selector">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_icon_update" />
+        
+        <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="16sp"
+	        android:textColor="@color/text_color2"
+	        android:text="@string/setting_update" />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_setting_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/setting_item_selector">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_icon_about" />
+        
+        <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="16sp"
+	        android:textColor="@color/text_color2"
+	        android:text="@string/setting_about_us" />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        
+        <LinearLayout 
+            android:id="@+id/ll_setting_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+	        android:paddingRight="20dp"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="10dp"
+	        android:gravity="center_vertical"
+	        android:background="@drawable/setting_exit_selector">
+            
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/common_title_back" />
+            
+            <TextView 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:textSize="16sp"
+		        android:textColor="@color/text_color2"
+		        android:text="@string/setting_exit" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

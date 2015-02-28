@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="app_name">微装修</string>
+    <string name="common_ok">确定</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_network_exception">网络异常，请稍候再试</string>
+    
+    <!-- home -->
+    <string name="home_pictures">看装修美图</string>
+    <string name="home_experience">学装修经验</string>
+    <string name="home_company">找装修公司</string>
+    <string name="home_building_materiials">团装修建材</string>
+    <string name="home_accounts">记装修账目</string>
+    <string name="home_consult">问装修管家</string>
+    
+    <!-- setting -->
+    <string name="setting_title">设置</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="setting_feedback">用户反馈</string>
+    <string name="setting_update">检查更新</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="setting_exit">返回</string>
+    <string name="setting_clear_dialog_title">提示</string>
+    <string name="setting_clear_dialog_message">确定清除应用缓存吗？</string>
+    <string name="setting_clear_dialog_success">清除缓存成功</string>
+    
+    <!-- consult -->
+    <string name="consult_send">发送</string>
+
+</resources>

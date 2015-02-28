@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="title_layout_bg">#EEEEEE</color>
+    <color name="title_btn_select">#E0E0E0</color>
+    <color name="white_select">#F2F2F2</color>
+    <color name="text_color">#575757</color>
+    <color name="text_color2">#B4B4B4</color>
+    <color name="orange">#FF8000</color>
+    <color name="drak_gray">#535353</color>
+    <color name="drak_gray_select">#444444</color>
+    <color name="black">#282828</color>
+    <color name="black_select">#191919</color>
+    <color name="gray">#CCCCCC</color>
+    
+    <color name="coner_color">#a2a2a2</color>
+	<color name="coner_color_selected">#eeeeee</color>
+	<color name="coner_color_default">#ffffff</color>
+    
+</resources>
